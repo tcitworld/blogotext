@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="{charset}" />
+	<title>{blog_nom}</title>
+	<meta name="generator" content="BlogoText" />
+	<meta name="robots" content="all" />
+	<meta name="author" content="{blog_auteur}" />
+	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	<meta name="description" content="{blog_description}" />
+	<link type="text/css" rel="stylesheet" href="{style}/style.css" />
+	<link type="application/rss+xml" rel="alternate" title="RSS 2.0 - Articles Résumés" href="{rss}" />
+	<link type="application/rss+xml" rel="alternate" title="RSS 2.0 - Articles Complets" href="{rss}?full" />
+</head>
+
+<body>
+
+
+<header id="top">
+<h1><a href="{racine_du_site}">{blog_nom}</a></h1>
+<h2>{blog_description}</h2>
+</header>
+
+<div id="wrapper">
+	<section id="sidebar">
+		<nav id="navigate">
+			<h3><img src="themes/default/search.png" alt="icon" /> Rechercher</h3>
+			{recherche}
+			{calendrier}
+			<hr/>
+		</nav>
+		<nav id="last_comments">
+			<h3><img src="themes/default/icon_comment.png" alt="icon" /> Derniers commentaires</h3>
+			{commentaires_encart}
+			<hr/>
+		</nav>
+		<nav id="tags">
+			<h3><img src="themes/default/icon_tag.png" alt="icon" /> Tags</h3>
+			{categories_encart}
+			<hr/>
+		</nav>
+		<nav id="liens">
+			<h3>Autres</h3>
+			<ul>
+				<li><a href="index.php">Blog</a></li>
+				<li><a href="index.php?mode=links">Liens</a></li>
+				<li><a href="index.php?mode=comments">Derniers commentaires</a></li>
+			</ul>
+			<hr/>
+		</nav>
+		<nav id="random">
+			<h3>Un article au hasard</h3>
+				<ul>
+					<li><a href="?random">Un article au hasard ?</a></li>
+				</ul>
+			<hr/>
+		</nav>
+		<nav id="rss">
+			<h4>Fils RSS</h4>
+			<ul>
+				<li><a href="rss.php"><img src="themes/default/feed.png" alt="icon" /> RSS</a> : Blog</li>
+				<li><a href="rss.php?full"><img src="themes/default/feed.png" alt="icon" /> RSS</a> : Blog (articles complets)</li>
+			</ul>
+			<hr/>
+		</nav>
+	</section>
+
+	<section id="contenu">
+		{BOUCLE_posts}
+
+		// ici il s'affichera ce qu'on veut : un article, un commentaire, un lien sauvé…
+		// les thèmes pour ces choses sont dans le dossier "template"
+		// chaque "objet" (lien, article, …) dispose de son propre formatage. 
+
+		// **** le texte que vous mettez ici (dans la "boucle") ne sera pas éxécuté ni affiché. ****
+
+		{/BOUCLE_posts}
+		
+	</section>
+
+	<br style="clear:both;" />
+	{pagination}
+</div> <!-- einde #wrapper -->
+
+
+<footer><b>{blog_auteur}</b>, tout droits réservés – Publié avec <a href="http://lehollandaisvolant.net/blogotext/">BlogoText</a> – Thème par <a href="http://lehollandaisvolant.net/">Timo van Neerden</a></footer>
+
+
+</body>
+</html>

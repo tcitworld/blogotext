@@ -1,0 +1,114 @@
+
+/* COMMENTAIRES */
+
+.commentbloc {
+	padding : 5px 15px 5px 30px;
+	margin-bottom: 10px;
+	background: #edf3fe url("comment.png") no-repeat 5px 5px;
+	background: url("comment.png") no-repeat 5px 5px, -webkit-linear-gradient(-135deg, white 25%, #edf3fe 55%);
+	background: url("comment.png") no-repeat 5px 5px,    -moz-linear-gradient(-135deg, white 25%, #edf3fe 55%);
+	background: url("comment.png") no-repeat 5px 5px,     -ms-linear-gradient(-135deg, white 25%, #edf3fe 55%);
+	background: url("comment.png") no-repeat 5px 5px,      -o-linear-gradient(-135deg, white 25%, #edf3fe 55%);
+	background: url("comment.png") no-repeat 5px 5px,         linear-gradient(-135deg, white 25%, #edf3fe 55%);
+	border: 1px solid #ccc;
+	border-width: 0 0 1px 1px;
+	border-radius: 10px 0 0 5px;
+}
+
+.commentbloc .admin, .commentbloc a .admin  {
+	color: #f53151;
+}
+
+.commentbloc h3, .commentbloc .email {
+	display: inline;
+	margin-right: 15px;
+}
+
+.commentbloc .date {
+	color: gray;
+	font-style: italic;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.commentbloc .lien_article_de_com {
+	display: inline;
+	float: right;
+}
+
+.commentbloc .lien_article_de_com img {
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
+.privatebloc {
+	margin-left: 20px;
+	background-color: #e1e1e1;
+	border-left: 6px solid #777;
+}
+
+.privatebloc h3, .privatebloc h3 a {
+	font-style: italic;
+	color: black;
+}
+
+#erreurs, .erreurs {
+	display: block;
+	clear: both;
+	color: #D40000;
+	margin: 0 0 15px 0;
+}
+
+.titre-commentaire, .titre-lien {
+	font-size: 16px;
+}
+
+.suppr-commentaire {
+	text-align: right;
+}
+
+.poster-comment {
+	padding-left: 20px;
+	background: url("comment.png") no-repeat left;
+}
+
+.form-commentaire label {
+	margin-top: 10px;
+}
+
+.form-commentaire textarea {
+	margin-top: 0;
+	width: 99%;
+	padding: .5%;
+	background: #f9f9f9;
+	border-radius: 0 0 5px 5px;
+}
+
+.form-commentaire input {
+	padding: 2px;
+}
+
+.form-commentaire fieldset, .post-lien fieldset {
+	border: none;
+	margin:0;
+	padding:0;
+}
+
+.infos input, .infos label {
+	display: inline;
+	min-width: 32px;
+}
+
+.form-commentaire fieldset.infos input {
+	margin-top: 2px;
+}
+.form-commentaire fieldset.infos {
+	margin-top: 15px;
+	width: 500px;
+	text-align: right;
+}
+
+fieldset.valid-center .submit {
+	float: none;
+	margin: 0 auto;
+}

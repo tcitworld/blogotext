@@ -1,0 +1,152 @@
+/* MES LIENS 
+--------------------------------------------------------------------------- */
+
+#post-new-lien { /* form nouveau lien (#1) */
+	margin: 10px 0 30px;
+}
+
+#post-new-lien #lien {
+	vertical-align: middle;
+	padding: 2px 0 2px 3px;
+	height: 22px;
+	width: 100%;
+}
+
+#post-lien input.readonly-like, textarea[readonly] { /* form nouveau lien (#2) */
+	color: #999;
+	background-color: #e8e8e8;
+}
+
+#post-lien input.text, #post-lien textarea {
+	min-width: 400px;
+	width: 50%;
+}
+
+#post-lien fieldset label {
+	width: 25%; /* default is 30% in .bordered-formbloc fieldset label (ligne 668)*/
+}
+
+.link_no_clic { /* le lien non clicable en bas d'un bloc de lien */
+	float: right;
+	margin-top: 0;
+	font-size: 70%;
+	color: gray;
+}
+
+.link-tags {
+	margin-bottom: .3em;
+}
+
+.link-tags span {
+	border: 1px solid silver;
+	padding: 0 2px 0 2px;
+	background-color: #87DCFF;
+	background: -webkit-linear-gradient(35deg, white, #f3f3f3 60%, #e6e6e6);
+	background:    -moz-linear-gradient(35deg, white, #f3f3f3 60%, #e6e6e6);
+	background:     -ms-linear-gradient(35deg, white, #f3f3f3 60%, #e6e6e6);
+	background:      -o-linear-gradient(35deg, white, #f3f3f3 60%, #87DCFF);
+	background:         linear-gradient(90deg, rgba(230, 230, 235, .5), rgba(187, 220, 255, .5));
+
+	background: rgba(235, 235, 240, .8);
+	box-shadow: 1px 1px 3px silver inset;
+	border-radius: 3px;
+	
+}
+
+.titre-lien a+a {
+	text-decoration: none;
+}
+
+.linkbloc {
+	padding : 5px 15px 0px 30px;
+	margin-bottom: 20px;
+	background: url("links.png") no-repeat 5px 7px, -webkit-linear-gradient(-65deg, white, #f3f3f3 60%, #e6e6e6);
+	background: url("links.png") no-repeat 5px 7px,    -moz-linear-gradient(-65deg, white, #f3f3f3 60%, #e6e6e6);
+	background: url("links.png") no-repeat 5px 7px,     -ms-linear-gradient(-65deg, white, #f3f3f3 60%, #e6e6e6);
+	background: url("links.png") no-repeat 5px 7px,      -o-linear-gradient(-65deg, white, #f3f3f3 60%, #e6e6e6);
+	background: url("links.png") no-repeat 5px 7px,         linear-gradient(-65deg, white, #f3f3f3 60%, #e6e6e6);
+	border: 1px solid silver;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #aaa;
+}
+
+.linkbloc:hover {
+	box-shadow: 1px 1px 4px #aaa, 1px 1px 3px #aaa;
+}
+
+.linkbloc a {
+	color: gray;
+}
+
+.linkbloc:hover a {
+	color: #45a6ff;
+}
+
+.linkbloc .titre-lien {
+	display: inline;
+	margin-right: 15px;
+}
+
+.linkbloc .date {
+	color: gray;
+	font-style: italic;
+	margin-right: 15px;
+	margin-bottom: 0px;
+}
+
+.linkbloc .date a {
+	color: inherit;
+}
+
+.linkbloc .lien_editer {
+	float: right;
+}
+
+.lien_editer span, .link_no_clic, .link-tags {
+	-webkit-transition: opacity 2s;
+	   -moz-transition: opacity 2s;
+	    -ms-transition: opacity 2s;
+	     -o-transition: opacity 2s;
+	        transition: opacity 2s;
+	opacity: .1;
+}
+
+.link-tags {
+	opacity: .3;
+}
+
+
+.linkbloc:hover .lien_editer span, .linkbloc:hover .link_no_clic, .linkbloc:hover .link-tags {
+	-webkit-transition: ALL .2s;
+	   -moz-transition: ALL .2s;
+	    -ms-transition: ALL .2s;
+	     -o-transition: ALL .2s;
+	        transition: ALL .2s;
+	opacity: 1;
+}
+
+.linkbloc .lien_editer img {
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
+/* TAGS */
+#post-lien #liste-tags {
+	min-width: 400px;
+	width: 50%;
+	margin: 0 0 2px 25%;
+	padding-left: 21px;
+	line-height: 19px;
+}
+
+#post-lien .tag {
+	margin-bottom: 2px;
+	padding: 0 5px 0 21px;
+	background: url("toggle-expand.png") no-repeat 3px center #ddd;
+	border: 1px solid #999;
+	border-radius: 0 5px 5px 7px;
+}
+
+#post-lien .tag:hover {
+	cursor: pointer;
+}
